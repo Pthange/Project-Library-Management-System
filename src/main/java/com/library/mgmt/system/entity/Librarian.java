@@ -1,11 +1,13 @@
 package com.library.mgmt.system.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -32,13 +34,15 @@ public class Librarian //extends Demo
 	private String libpassword;
 	private String libMobno;
 	private String libGender;
-	
-	 @OneToOne
-	  private Student students;
+		 
+	@OneToMany
+    //@JoinColumn(name = "librarian_id") // This will create a column named "librarian_id" in the Student table
+    private List<Student> students;
 
-	 @OneToOne
-	 private Faculty faculties;
-	
-	
+    @OneToMany
+   // @JoinColumn(name = "librarianId") // This will create a column named "librarian_id" in the faculty table
+    private List<Faculty> faculties;
+
+
 
 }

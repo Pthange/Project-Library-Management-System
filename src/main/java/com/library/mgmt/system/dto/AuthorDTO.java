@@ -1,7 +1,5 @@
 package com.library.mgmt.system.dto;
 
-import java.util.List;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -21,7 +19,7 @@ public class AuthorDTO //extends DemoDTO
 	@NotBlank(message="Enter Right Gender")
     private String authorGender;
 
-    private List<Book> books;
+	private Book books;
     
 
 }

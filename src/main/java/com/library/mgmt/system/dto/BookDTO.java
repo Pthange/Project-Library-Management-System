@@ -3,10 +3,8 @@ package com.library.mgmt.system.dto;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import com.library.mgmt.system.entity.Author;
 import com.library.mgmt.system.entity.Faculty;
 import com.library.mgmt.system.entity.Student;
-
 import lombok.Data;
 
 @Data 
@@ -25,12 +23,10 @@ public class BookDTO //extends DemoDTO
 	private String language;
 	
 	private Student student;  
-	// Many-to-One relationship with the Student entity. CascadeType.ALL allows cascading operations.
+	// Many-to-One relationship with the Student entity. 
 	
-	private Author authors;    
-	// Many-to-One relationship with the Author entity. CascadeType.ALL allows cascading operations.
-
 	private Faculty faculty;  
-	// Many-to-One relationship with the Faculty entity. CascadeType.ALL allows cascading operations.
+	// Many-to-One relationship with the Faculty entity. 
+	
 
 }

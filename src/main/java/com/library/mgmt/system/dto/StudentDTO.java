@@ -8,7 +8,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import com.library.mgmt.system.entity.Book;
-import com.library.mgmt.system.entity.Librarian;
 import com.library.mgmt.system.entity.Transaction;
 
 import lombok.Data;
@@ -41,8 +40,6 @@ public class StudentDTO //extends DemoDTO
 
 	private List<Book> books;
 	
-	private Librarian librarian;
-
-	private Transaction transaction ;
+    private List<Transaction> transactions;
 
 }

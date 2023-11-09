@@ -8,7 +8,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import com.library.mgmt.system.entity.Book;
-import com.library.mgmt.system.entity.Librarian;
 import com.library.mgmt.system.entity.Transaction;
 
 import lombok.Data;
@@ -42,11 +41,9 @@ public class FacultyDTO //extends DemoDTO
 	@Pattern(regexp ="^\\d{10}$", message="Mobile number should be of 10 digits")
 	private String facMobno;
 
-	private Librarian librarian;
+    private List<Book> books;
 
-	private List<Book> books;
-
-	private Transaction transaction ;
+    private List<Transaction> transactions;
 	
 
 }

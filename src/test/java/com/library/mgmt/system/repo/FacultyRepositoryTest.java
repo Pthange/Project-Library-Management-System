@@ -38,8 +38,8 @@ public class FacultyRepositoryTest {
         facultyRepository.deleteAll();
 
         // Create and save multiple faculty entities
-        Faculty faculty1 = new Faculty(1, "Rahul Patil", "rahul1@example.com", "faculty1", "887", null, "male",  null, null, null, null, null);
-        Faculty faculty2 = new Faculty(2, "Pooja Raut", "pooja2@example.com", "faculty2", "5545", null, "female",  null, null, null, null, null);
+        Faculty faculty1 = new Faculty(1, "Rahul Patil", "rahul1@example.com", "faculty1", "887", null, "male",   null, null, null, null);
+        Faculty faculty2 = new Faculty(2, "Pooja Raut", "pooja2@example.com", "faculty2", "5545", null, "female",  null, null, null, null);
       
         facultyRepository.save(faculty1);
         facultyRepository.save(faculty2);

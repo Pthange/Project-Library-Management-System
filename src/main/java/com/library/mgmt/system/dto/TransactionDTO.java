@@ -18,7 +18,6 @@ public class TransactionDTO //extends DemoDTO
 	@NotBlank(message="cannot be null")
     private String dueDate;
 	
-	@NotBlank
 	private String returnDate;
     
     private int total_fine;

@@ -37,9 +37,9 @@ public class BookRepositoryTest {
         bookRepository.deleteAll();
 
         // Create and save multiple book entities
-        Book book1 = new Book(1, "To Kill a Mockingbird", "Harper Lee","9780061122415", "Fiction",  "English", null, null, null);
-        Book book2 = new Book(2, "1984", "George Orwell",  "9780451524935","Dystopian","English", null, null, null);
-        Book book3 = new Book(3, "The Great Gatsby", "F. Scott Fitzgerald","9780743273565", "Classic","English",  null,  null, null);
+        Book book1 = new Book(1, "To Kill a Mockingbird", "Harper Lee","9780061122415", "Fiction",  "English", null,  null);
+        Book book2 = new Book(2, "1984", "George Orwell",  "9780451524935","Dystopian","English", null,  null);
+        Book book3 = new Book(3, "The Great Gatsby", "F. Scott Fitzgerald","9780743273565", "Classic","English", null, null);
 
         bookRepository.save(book1);
         bookRepository.save(book2);

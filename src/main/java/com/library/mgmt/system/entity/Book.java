@@ -31,16 +31,10 @@ public class Book //extends Demo
 	private String language;
 	
 	@ManyToOne
-	private Student student;  
-	// Many-to-One relationship with the Student entity. CascadeType.ALL allows cascading operations.
+    private Student student;
 
-	@ManyToOne
-	private Author authors;    
-	// Many-to-One relationship with the Author entity. CascadeType.ALL allows cascading operations.
-
-	@ManyToOne
-	private Faculty faculty;  
-	// Many-to-One relationship with the Faculty entity. CascadeType.ALL allows cascading operations.
-
+    @ManyToOne
+    private Faculty faculty;
+    
 
 }

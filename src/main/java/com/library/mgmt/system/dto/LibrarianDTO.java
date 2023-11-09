@@ -31,10 +31,9 @@ public class LibrarianDTO //extends DemoDTO
 	@NotBlank(message="Enter Right Gender")
 	private String libGender;
 
-	  private Student students;
+	private List<Student> students;
 
-	  private Faculty faculties;
-	
+    private List<Faculty> faculties;
 	 
 
 }

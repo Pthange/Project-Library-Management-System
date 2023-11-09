@@ -40,8 +40,8 @@ public class StudentRepositoryTest {
         studentRepository.deleteAll();
 
         // Create and save multiple student entities
-        Student student1 = new Student(1, "John Doe", "john@example.com", "john123", "securepwd", "12-08-2001","male","Pune", "IT", "8864764921", null, null, null);
-        Student student2 = new Student(2, "Alice Smith", "alice@example.com", "alice99", "password123", "18-08-1987", "male", "Delhi","MBBS", "7896541254", null,  null, null);
+        Student student1 = new Student(1, "John Doe", "john@example.com", "john123", "securepwd", "12-08-2001","male","Pune", "IT", "8864764921", null, null);
+        Student student2 = new Student(2, "Alice Smith", "alice@example.com", "alice99", "password123", "18-08-1987", "male", "Delhi","MBBS", "7896541254", null, null);
         
         studentRepository.save(student1);
         studentRepository.save(student2);

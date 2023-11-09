@@ -2,14 +2,13 @@ package com.library.mgmt.system.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -39,13 +38,12 @@ public class Student
 	private String studDepartment;
 	private String studMobno;
 	
-	@OneToMany
+	// Establishing a one-to-many relationship with books
+	@OneToMany(mappedBy = "student", cascade = CascadeType.ALL)  
 	private List<Book> books;
-
-	@OneToOne
-	private Transaction transaction ;
 	
-	 @OneToOne
-	 private Librarian librarian;
+	// Establishing a one-to-many relationship with transactions
+	 @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+	 private List<Transaction> transactions;
 
 }
