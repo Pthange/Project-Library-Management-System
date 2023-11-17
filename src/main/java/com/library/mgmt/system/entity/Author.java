@@ -26,7 +26,7 @@ public class Author //extends Demo
 	@Column(name="AuthorID")
 	private int id;
 	private String authorName;
-    private String nationality;
+    private String booktitle;
     private String authorGender;
    
     @ManyToOne
