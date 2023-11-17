@@ -16,7 +16,7 @@ public class TransactionDTO //extends DemoDTO
 	@NotNull
      private String booktitle;
 	@NotNull
-    private  String name;
+    private  String name;  //name should be faculty name or student name
 
 	@NotBlank(message="cannot be null")
     private String borrowDate;
