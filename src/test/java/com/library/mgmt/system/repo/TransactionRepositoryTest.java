@@ -38,8 +38,8 @@ public class TransactionRepositoryTest
         transactionRepository.deleteAll();
         
         // Create and save multiple transaction entities
-        Transaction transaction1 = new Transaction(1,"12-08-2020", "04-09-2023", "22-08-2023", 00,null, null, null);
-        Transaction transaction2 = new Transaction(2,"27-12-2023", "18-01-2024", "28-01-2024", 150, null, null, null);
+        Transaction transaction1 = new Transaction(1,"12-08-2020", "04-09-2023", "22-08-2023", null, null, 00,null, null, null);
+        Transaction transaction2 = new Transaction(2,"27-12-2023", "18-01-2024", "28-01-2024", null, null, 150, null, null, null);
        
         transactionRepository.save(transaction1);
         transactionRepository.save(transaction2);
