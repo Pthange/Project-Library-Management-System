@@ -28,7 +28,7 @@ public class AuthorRepositoryTest {
 
         author.setAuthorName("John Doe");
         author.setAuthorGender("male");
-        author.setNationality("American");
+        author.setBooktitle("American");
 
         Author savedAuthor = authorRepository.save(author);
         assertNotNull(savedAuthor.getId());
@@ -62,7 +62,7 @@ public class AuthorRepositoryTest {
         Author author = new Author();
         author.setAuthorName("Umin");
         author.setAuthorGender("Female");
-        author.setNationality("Korean");
+        author.setBooktitle("Korean");
 
         author = authorRepository.save(author);
 
@@ -74,7 +74,7 @@ public class AuthorRepositoryTest {
         assertEquals(author.getId(), retrievedAuthor.getId());
         assertEquals("Umin", retrievedAuthor.getAuthorName());
         assertEquals("Female", retrievedAuthor.getAuthorGender());
-        assertEquals("Korean", retrievedAuthor.getNationality());
+        assertEquals("Korean", retrievedAuthor.getBooktitle());
     }
 
     @Test
@@ -134,7 +134,7 @@ public class AuthorRepositoryTest {
         Author author = new Author();
         author.setAuthorName("Umin");
         author.setAuthorGender("Female");
-        author.setNationality("Korean");
+        author.setBooktitle("Korean");
 
         author = authorRepository.save(author);
 
@@ -146,7 +146,7 @@ public class AuthorRepositoryTest {
         assertEquals(author.getId(), retrievedAuthor.getId());
         assertEquals("Umin", retrievedAuthor.getAuthorName());
         assertEquals("Female", retrievedAuthor.getAuthorGender());
-        assertEquals("Korean", retrievedAuthor.getNationality());
+        assertEquals("Korean", retrievedAuthor.getBooktitle());
     }
 
 
