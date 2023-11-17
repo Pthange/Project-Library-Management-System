@@ -15,7 +15,7 @@ public class AuthorDTO //extends DemoDTO
 	@NotNull(message="Author cannot be null")
 	private String authorName;
 	@NotBlank
-    private String nationality;
+    private String booktitle;
 	@NotBlank(message="Enter Right Gender")
     private String authorGender;
 
