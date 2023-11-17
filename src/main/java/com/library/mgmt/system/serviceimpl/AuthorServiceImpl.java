@@ -28,7 +28,6 @@ public class AuthorServiceImpl implements AuthorService {
     {
         // Create and save an Author entity with specific attributes
         author.setAuthorName(author.getAuthorName());
-    	author.setNationality(author.getNationality());
         
         Author authorEntity = authorRepository.save(author); 
         // Save the Author in the database
@@ -71,7 +70,6 @@ public class AuthorServiceImpl implements AuthorService {
                 new ResourceNotFoundException("Author", "Id", id)); // Fetch Author by ID
         
         author.setAuthorName(author.getAuthorName());
-    	author.setNationality(author.getNationality());
         // Update specific attributes for the Author entity
         
         Author updatedAuthor = authorRepository.save(authorEntity); 
