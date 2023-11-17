@@ -1,6 +1,7 @@
 package com.library.mgmt.system.dto;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import com.library.mgmt.system.entity.Book;
 import com.library.mgmt.system.entity.Faculty;
@@ -12,6 +13,11 @@ import lombok.Data;
 //Lombok's @Data annotation will automatically gives required methods like constructors,getter and setter
 public class TransactionDTO //extends DemoDTO
 { 
+	@NotNull
+     private String booktitle;
+	@NotNull
+    private  String name;
+
 	@NotBlank(message="cannot be null")
     private String borrowDate;
 	
