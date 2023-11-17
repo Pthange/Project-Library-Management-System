@@ -25,6 +25,9 @@ public class Transaction //extends Demo
 	@GeneratedValue(strategy = GenerationType.AUTO) //Making id as auto generated
     @Column(name="TransactionID")
     private int id;
+    private String booktitle;
+	// name should be "studentname/facultyname"
+    private  String name;
     private String borrowDate;
     private  String dueDate;
     private  String returnDate;
